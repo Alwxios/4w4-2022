@@ -337,7 +337,7 @@ html {
 ÉLÉMENTS
 --------------------------------------------------------- */
 a {
-  color: #7b5647;
+  color: #d6cbc7;
 }
 
 a:visited {
@@ -362,7 +362,7 @@ COMPOSANTES
 .principal {
   margin: 20px;
   padding: 10px 15px;
-  background-color: #eca7a7;
+  background-color: #1024e0;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
@@ -386,7 +386,7 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: #ffd6d1;
+  background-color: #ededed;
   box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
   margin: 10px;
@@ -425,19 +425,69 @@ COMPOSANTES
 }
 
 .site__header {
-  background-color: #594036;
-  color: #fa9292;
+  background-color: #d9d9d9;
+  color: #1024e0;
   padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-.site__header .header__titre {
-  font-size: 3em;
+@media screen and (min-width: 800px) {
+  .site__header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.site__header__titre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.site__header__titre h1 {
+  font-size: clamp(2rem, 3vw, 7rem);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.site__header .header__desc {
-  font-size: 1.5rem;
+.site__header__titre h2 {
+  font-size: clamp(1rem, 2vw, 4rem);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0 0 0 2rem;
+}
+
+.site__header__util {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .site__header__util {
+    width: 20%;
+  }
+}
+
+.recherche__input {
+  width: 100%;
+  outline: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.recherche__bouton {
+  position: absolute;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
 }
 
 .navigation {
@@ -455,6 +505,10 @@ COMPOSANTES
     background-color: $color__background-link-hover;
 }
 */
+#chk-burger {
+  display: none;
+}
+
 #burger {
   position: absolute;
   transition: transform .3s;
@@ -488,11 +542,11 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #ffa3a3;
+  background-color: #4f527d;
 }
 
 .menu-item a:hover {
-  background-color: #ffd1d1;
+  background-color: #b4b8fd;
 }
 
 @media screen and (min-width: 800px) {
@@ -506,14 +560,14 @@ COMPOSANTES
 
 .site__footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #2f2a28;
+  background-color: #262626;
   padding: 15px;
 }
 
 .footer__titre,
 .footer__presentation,
 .footer__author {
-  color: #ffcabc;
+  color: #e8e8e8;
   text-align: center;
 }
 
@@ -524,28 +578,28 @@ LAYOUT
 theme name: Ex1 Leblanc Alexis
 */
 .site {
-  background-color: #957365;
+  background-color: #262626;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .site__header {
   grid-area: header;
-  background-color: #594036;
+  background-color: #d9d9d9;
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #ff8585;
+  background-color: #acb5e7;
 }
 
 .site__main {
   grid-area: main;
-  background-color: #eca7a7;
+  background-color: #1024e0;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #2f2a28;
+  background-color: #262626;
 }
 
 .site {

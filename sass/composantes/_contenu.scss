@@ -33,12 +33,15 @@
         @media screen and (min-width : $largeur__media--tablette) {
             width: 45%;
         }
+        
         @media screen and (min-width : $largeur__media--descktop) {
             width: 30%;
-        }
+        }   
         padding: 10px;
     }
+   
 }
+
 
 .cours__titre {
     font-size: 1.5rem;
