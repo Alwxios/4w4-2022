@@ -1,9 +1,15 @@
-<?php get_header() ?>
-<main class="site__main">
-    <h1>category-cours.php</h1>
-    <?php if(have_posts()): ?>
+.cours {
+    &__titre {}
+    &__contenu {}
+}
+
+/* 
+
+ **** Dans single.php, si le code fonctionne pas, mettre ça à place ***
+
+ <?php if(have_posts()): ?>
         <section class="cours">
-            <?php while(have_posts()): the_post(); ?>
+            <?php  the_post(); ?>
             <article class="cours__carte">
                 <?php
                     $titre = get_the_title();
@@ -14,18 +20,13 @@
                     $posFinHeures = strrpos($titre, ')');
                     $nbHeures = substr($titre, $posDebutHeures, $posFinHeures - $posDebutHeures);
                 ?>
-                <?php the_post_thumbnail("thumbnail"); ?>
                 <h2 class="carte__titre"><?= $titreCourt; ?></h2>
-                <a href="<?php echo get_permalink() ?>">
-                    <?php $titreCourt ?>
-                </a>
-                
                 <p class="carte__code"><?= substr(get_the_title(), 0, 7) ?></p>
                 <p><?= $nbHeures; ?></p>
                 <p class="carte__description"><?= get_the_excerpt() ?></p>
             </article>
-            <?php endwhile; ?>
+   
         </section>
     <?php endif; ?>
-</main>
-<?php get_footer() ?>
+
+    */

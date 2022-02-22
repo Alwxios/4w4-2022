@@ -1,26 +1,19 @@
 <?php get_header() ?>
 <main class="site__main">
-    <h1>---------------single.php-------</h1>
-    <?php if(have_posts()): ?>
-        <section class="cours">
-            <?php  the_post(); ?>
-            <article class="cours__carte">
-                <?php
-                    $titre = get_the_title();
-                    $titreCourt = substr(get_the_title(), 8);
-                    $titreCourt = substr($titreCourt, 0, strrpos($titreCourt, '('));
-
-                    $posDebutHeures = strrpos($titre, '(') + 1;
-                    $posFinHeures = strrpos($titre, ')');
-                    $nbHeures = substr($titre, $posDebutHeures, $posFinHeures - $posDebutHeures);
-                ?>
-                <h2 class="carte__titre"><?= $titreCourt; ?></h2>
-                <p class="carte__code"><?= substr(get_the_title(), 0, 7) ?></p>
-                <p><?= $nbHeures; ?></p>
-                <p class="carte__description"><?= get_the_excerpt() ?></p>
-            </article>
-   
-        </section>
+    <h1>---------- single.php -------</h1>
+    <?php if(have_posts()): while(have_posts()): the_post(); ?>
+        <article class="cours">
+            <h1 class="site__titre">
+                <?php echo get_the_title() ?>
+            </h1>
+            <?php the_post_thumbnail('thumbnail');?>
+            <section class="cours__contenu">
+                <?php the_content(); ?>
+            </section>
+        </article>
+    <?php endwhile ?>
     <?php endif; ?>
 </main>
 <?php get_footer() ?>
+
+<!-- Si le code fonctionne pas, voir dans _single_cours.scss --> 

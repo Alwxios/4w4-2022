@@ -1,8 +1,8 @@
 /**
-Theme name: Lab4 gr3 Alexis Leblanc
+Theme name: Ex2 gr3 Alexis Leblanc
 Author: Alexis Leblanc
 Author URI : https://github.com/Alwxios/4w4-2022
-Description: Lab 4 dans le cadre du cours 4W4
+Description: Exercice 2 dans le cadre du cours 4W4
 Version: 1.0
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
@@ -34,6 +34,7 @@ COMPOSANTS
 @import "composants/footer";
 @import "composants/header";
 @import "composants/navigation";
+@import "composants/single_cours";
 
 /* ---------------------------------------------------------
 ELEMENTS
