@@ -21,12 +21,76 @@
 		outline: 0;
 	}
 }
+/**************** */
+@mixin links(
+	$couleur, 
+	$couleur--visited, 
+	$couleur--hover,
+	$backgound, 
+	$backgound--visited, 
+	$backgound--hover) {
 
+	font-size: clamp(0.5rem, 2vw, 1.2rem);
+	color: $couleur;
+
+	&:visited {
+		color: $couleur-visited;
+		background-color: $backgound--visited;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $couleur-hover;
+		background-color: $couleur--hover;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+/* ********************/
 
 a {
-	@include links($color__link, $color__link-visited, $color__link-hover);
+	@include links(
+		$color__link, 
+		$color__link-visited, 
+		$color__link-hover
+	);
 }
 
 .site__footer a {
-	@include links($color__link__footer, $color__link__footer-visited, $color__link__footer-hover);
+	@include links(
+		$color__link__footer, 
+		$color__link__footer-visited, 
+		$color__link__footer-hover
+	);
+}
+
+.site__footer .menu-item a {
+	@include links__menu (
+		$color__link__footer__menu, 
+		$color__link__footer__menu-visited, 
+		$color__link__footer__menu-hover,
+		$background__link__footer__menu, 
+		$background__link__footer__menu-visited, 
+		$background__link__footer__menu-hover
+	);
+}
+
+.menu-principal .menu-item a {
+	@include links__menu (
+		$color__link__menu__principal, 
+		$color__link__menu__principal-visited, 
+		$color__link__menu__principal-hover,
+		$background__link__menu__principal, 
+		$background__link__menu__principal-visited, 
+		$background__link__menu__principal-hover
+	);
 }

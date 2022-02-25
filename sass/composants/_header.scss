@@ -29,6 +29,12 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-left: auto;
+
+    &__lien {
+        display: flex;
+        
+    }
 
     @media screen and (min-width: $largeur__media-tablette){
         min-width: 400px;
