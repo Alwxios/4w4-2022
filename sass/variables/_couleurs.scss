@@ -16,15 +16,17 @@ $color__cours__shadow: rgba(233, 233, 233, 0.6);
 
 $color__carte__bordure: #73726e;
 
-$color__link: #8fcec2;
+$color__link: rgb(206, 169, 115);
 $color__link-visited: rgb(34, 34, 34);
 $color__link-hover: rgb(113, 113, 175);
 
-$color__link__footer: rgb(44, 44, 44);
-$color__link__footer-visited: rgb(206, 169, 115);
+$color__link__footer: rgb(206, 169, 115);
+$color__link__footer-visited: rgb(34, 34, 34);
 $color__link__footer-hover: rgb(218, 218, 218);
 
 $color__background-link-hover: rgb(253, 253, 253);
+
+/* La suite du code ne fonctionne pas */
 
 /***************************** Couleur menu footer  */
 $color__link__footer__menu: rgb(253, 253, 253);
