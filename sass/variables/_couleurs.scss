@@ -1,45 +1,45 @@
-$color__background-body: rgb(44, 44, 44);
-$color__colorbackground-header: rgb(15, 179, 111);
-$color__colorbackground-barre: #038C73;
-$color__colorbackground-main: rgb(15, 179, 111);
-$color__colorbackground-footer: #038C73;
-$color__colorbackground-recherche: rgb(53, 53, 53);
+/* ---------------- BACKGROUND */
+$color__background-body : hsl(224, 44%, 90%);
+$color__background-body-clip : hsl(204, 78%, 65%);
+$color__background-main : hsl(204, 49%, 89%);
+$color__background-cours : hsl(209, 100%, 91%);
+$color__background-header : hsl(207, 66%, 66%);
+$color__background-barre : hsl(200, 78%, 9%);
+$color__background-footer : hsl(225, 78%, 13%);
+$color__background-link : hsl(227, 22%, 84%);
+$color__background-link-hover : hsl(236, 64%, 44%);
 
-$color__texte__recherche: rgb(202, 209, 212);
-$color__texte__icones: rgb(68, 68, 68);
-$color__texte__defaut: rgb(212, 212, 212);
+/* ---------------- LIENS */
+$color__link : hsl(18, 27%, 38%);
+$color__link-hover : hsl(0, 0%, 100%);
+$color__link-visited : hsl(19, 29%, 28%);
+/* ---------------- LIENS FOOTER */
+$color__link__footer : hsl(0, 91%, 50%);
+$color__link__footer-hover : hsl(123, 80%, 49%);
+$color__link__footer-visited : hsl(231, 84%, 50%);
+/* ---------------- LIENS HEADER titre principal du site */
+$color__link__header : hsl(0, 82%, 68%);
+$color__link__header-hover : hsl(123, 63%, 72%);
+$color__link__header-visited : hsl(261, 62%, 56%);
+/* ----------------------- couleur menu footer */
+$color__link__footer__menu : #fff;
+$color__link__footer__menu-visited : #ddd;
+$color__link__footer__menu-hover: #f00;
+$background__link__footer__menu : #444;
+$background__link__footer__menu-visited : #555; 
+$background__link__footer__menu-hover: #222;
+/* ----------------------- couleur menu principal */
+$color__link__menu__principal : #0f0;
+$color__link__menu__principal-visited : #0d0; 
+$color__link__menu__principal-hover : #00f;
+$background__link__menu__principal : #ddd;
+$background__link__menu__principal-visited: #ccc;
+$background__link__menu__principal-hover : #ddd;
 
-$color__cours__bordure: rgb(244, 244, 255);
-$color__cours__background: rgb(44, 44, 44);
-$color__cours__background-pair: rgb(44, 44, 44);;
-$color__cours__shadow: rgba(233, 233, 233, 0.6);
 
-$color__carte__bordure: #70706d;
 
-$color__link: rgb(206, 169, 115);
-$color__link-visited: rgb(49, 49, 49);
-$color__link-hover: rgb(113, 113, 175);
-
-$color__link__footer: rgb(206, 169, 115);
-$color__link__footer-visited: rgb(34, 34, 34);
-$color__link__footer-hover: rgb(218, 218, 218);
-
-$color__background-link-hover: rgb(253, 253, 253);
-
-/* La suite du code ne fonctionne pas */
-
-/***************************** Couleur menu footer  */
-$color__link__footer__menu: rgb(253, 253, 253);
-$color__link__footer__menu-visited: rgb(22, 156, 112);
-$color__link__footer__menu-hover:rgb(185, 48, 48);
-$background__link__footer__menu: rgb(160, 100, 100);
-$background__link__footer__menu-visited: rgb(48, 26, 26);
-$background__link__footer__menu-hover: rgb(219, 206, 206);
-
-/***************************** Couleur menu principal  */
-$color__link__menu__principal: rgb(219, 206, 206);
-$color__link__menu__principal-visited: rgb(163, 63, 63);
-$color__link__menu__principal-hover: rgb(49, 46, 46);
-$background__link__menu__principal: rgb(168, 75, 75);
-$background__link__menu__principal-visited: rgb(187, 106, 106);
-$background__link__menu__principal-hover: rgb(46, 9, 9);
+/* ---------------- FONT */
+$color__font-header : rgb(214, 216, 228);
+$color__font-main :rgb(219, 223, 243);
+$color__font-barre : rgb(208, 216, 240);
+$color__font-footer : rgb(226, 231, 248);
