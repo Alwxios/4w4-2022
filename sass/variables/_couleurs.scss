@@ -1,20 +1,20 @@
 /* ---------------- BACKGROUND */
-$color__background-body : hsl(224, 44%, 90%);
-$color__background-body-clip : hsl(204, 78%, 65%);
-$color__background-main : hsl(204, 49%, 89%);
-$color__background-cours : hsl(209, 100%, 91%);
-$color__background-header : hsl(207, 66%, 66%);
-$color__background-barre : hsl(200, 78%, 9%);
-$color__background-footer : hsl(225, 78%, 13%);
-$color__background-link : hsl(227, 22%, 84%);
-$color__background-link-hover : hsl(236, 64%, 44%);
+$color__background-body : rgb(235, 235, 235);
+$color__background-body-clip : rgb(44, 44, 44); /**/
+$color__background-main : rgb(15, 179, 111);
+$color__background-cours : rgb(44, 44, 44);
+$color__background-header : rgb(15, 179, 111);
+$color__background-barre : #038C73;
+$color__background-footer : #038C73;
+$color__background-link : rgb(44, 44, 44); /**/
+$color__background-link-hover : rgb(49, 49, 49);
 
 /* ---------------- LIENS */
 $color__link : hsl(18, 27%, 38%);
 $color__link-hover : hsl(0, 0%, 100%);
 $color__link-visited : hsl(19, 29%, 28%);
 /* ---------------- LIENS FOOTER */
-$color__link__footer : hsl(0, 91%, 50%);
+$color__link__footer : rgb(206, 169, 115);
 $color__link__footer-hover : hsl(123, 80%, 49%);
 $color__link__footer-visited : hsl(231, 84%, 50%);
 /* ---------------- LIENS HEADER titre principal du site */
@@ -39,7 +39,7 @@ $background__link__menu__principal-hover : #ddd;
 
 
 /* ---------------- FONT */
-$color__font-header : rgb(214, 216, 228);
-$color__font-main :rgb(219, 223, 243);
-$color__font-barre : rgb(208, 216, 240);
-$color__font-footer : rgb(226, 231, 248);
+$color__font-header : rgb(44, 44, 44);
+$color__font-main :rgb(44, 44, 44);
+$color__font-barre : rgb(44, 44, 44);
+$color__font-footer : rgb(44, 44, 44);
