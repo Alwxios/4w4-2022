@@ -355,15 +355,15 @@ html {
 /* ---------------------------------- */
 /* -----------------------------------*/
 a {
-  color: #7b5647;
+  color: #cea973;
 }
 
 a:visited {
-  color: #5c4033;
+  color: black;
 }
 
 a:hover, a:focus, a:active {
-  color: white;
+  color: #12a85d;
 }
 
 a:focus {
@@ -379,11 +379,11 @@ a:hover, a:active {
 }
 
 .site__footer a:visited {
-  color: #1435eb;
+  color: black;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: #19e123;
+  color: #12a85d;
 }
 
 .site__footer a:focus {
@@ -395,15 +395,15 @@ a:hover, a:active {
 }
 
 .header__titre a {
-  color: #f06a6a;
+  color: #dbdbdb;
 }
 
 .header__titre a:visited {
-  color: #7a49d4;
+  color: #dbdbdb;
 }
 
 .header__titre a:hover, .header__titre a:focus, .header__titre a:active {
-  color: #8be58f;
+  color: #115332;
 }
 
 .header__titre a:focus {
@@ -465,7 +465,7 @@ COMPOSANTES
 --------------------------------------------------------- */
 .site__main {
   padding: 10px 15px;
-  background-color: #0fb36f;
+  background-color: #08472d;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
@@ -488,7 +488,7 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: #2c2c2c;
+  background-color: #08472d;
   box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
   margin: 10px;
@@ -530,7 +530,7 @@ COMPOSANTES
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #0fb36f;
+  background-color: #08472d;
   color: #2c2c2c;
   padding-left: 10px;
 }
@@ -641,8 +641,8 @@ COMPOSANTES
 
 .site__footer {
   font-family: "Righteous", cursive;
-  background-color: #038C73;
-  color: #2c2c2c;
+  background-color: #0e4d41;
+  color: #cacaca;
   padding: 15px;
 }
 
@@ -687,7 +687,7 @@ COMPOSANTES
 }
 
 .footer__menu__nav__ul .menu-item a:hover svg {
-  color: #19e123;
+  color: #12a85d;
 }
 
 .cours__contenu {
@@ -764,7 +764,7 @@ LAYOUT
 theme name: Lab 2 Lemieux Florence
 */
 .site {
-  background-color: rgba(235, 235, 235, 0.5);
+  background-color: rgba(219, 219, 219, 0.5);
   font-family: "Karla", sans-serif;
 }
 
@@ -784,22 +784,22 @@ theme name: Lab 2 Lemieux Florence
 
 .site__header {
   grid-area: header;
-  background-color: rgba(15, 179, 111, 0.5);
+  background-color: rgba(8, 71, 45, 0.5);
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #038C73;
+  background-color: #e9e9e9;
 }
 
 .site__main {
   grid-area: main;
-  background-color: rgba(15, 179, 111, 0.5);
+  background-color: rgba(8, 71, 45, 0.5);
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #038C73;
+  background-color: #0e4d41;
 }
 
 .site {
