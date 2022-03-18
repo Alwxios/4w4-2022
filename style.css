@@ -736,64 +736,36 @@ ANIMATION
 
 .animation {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  transition: transform 0.4s cubic-bezier(0.17, 0.67, 0.8, 0.16);
 }
 
 .animation__bloc {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 100px;
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
-  background-color: #1161f7;
-  color: #fff;
-  font-size: 3rem;
-  animation: anim-entete 1s forwards;
+  padding-top: 11rem;
+  animation: 1.5s linear infinite alternate RondCouleur, 8s linear infinite Tourner;
 }
 
-@keyframes anim-entete {
-  0% {
-    transform: translateY(-100vh);
+@keyframes RondCouleur {
+  from {
+    box-shadow: 0 0 #08472d, 0 0 #cea973, 0 0 #12a85d, 0 0 #dbdbdb;
   }
-  100% {
-    transform: translateY(0);
+  to {
+    box-shadow: 0 -10px #08472d, -10px 0 #cea973, 0 10px #12a85d, 10px 0 #dbdbdb;
   }
 }
 
-/***** Nouvelle animation 
-.rond {
-    justify-content: center;
-    transition: transform 0.4s cubic-bezier(0.17, 0.67, 0.8, 0.16);
+@keyframes Tourner {
+  from {
+    transform: rotate(0deg);
   }
-  .rond > div {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    padding-top: 11rem;
-    animation: 1.5s linear infinite alternate RondCouleur,
-      8s linear infinite Tourner;
+  to {
+    transform: rotate(360deg);
   }
-  
-  @keyframes RondCouleur {
-    from {
-      box-shadow: 0 0 #4c23e8, 0 0 #e0a531, 0 0 #da0909, 0 0 #44ebe0;
-    }
-    to {
-      box-shadow: 0 -10px #4c23e8, -10px 0 #e0a531, 0 10px #da0909, 10px 0 #44ebe0;
-    }
-  }
-  
-  @keyframes Tourner {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
+}
 
-  *****/
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */

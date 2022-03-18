@@ -2,11 +2,11 @@
 <main class="site__main">
 
 <section class="animation">
-    <div class="animation__bloc">1</div>
-    <div class="animation__bloc">2</div>
+    <div class="animation__bloc"></div>
+    <!-- <div class="animation__bloc">2</div>
     <div class="animation__bloc">3</div>
     <div class="animation__bloc">4</div>
-    <div class="animation__bloc">5</div>
+    <div class="animation__bloc">5</div> -->
 </section>
 
    <h1 class="titre">Bienvenue à la page principal</h1>
