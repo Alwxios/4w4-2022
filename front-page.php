@@ -9,7 +9,7 @@
     <div class="animation__bloc">5</div>
 </section>
 
-    <h1 class="titre">Bienvenue à la page principal</h1>
+   <h1 class="titre">Bienvenue à la page principal</h1>
    <?php if (have_posts()): the_post(); ?>
         <?php the_title() ?>
         <?php the_content() ?>   
