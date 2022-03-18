@@ -1,3 +1,7 @@
+.titre {
+  text-align: center;
+}
+
 .animation{
     display : flex;
     justify-content: space-between;
@@ -24,3 +28,37 @@
         transform : translateY(0);  
     }
 }
+
+/***** Nouvelle animation 
+.rond {
+    justify-content: center;
+    transition: transform 0.4s cubic-bezier(0.17, 0.67, 0.8, 0.16);
+  }
+  .rond > div {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    padding-top: 11rem;
+    animation: 1.5s linear infinite alternate RondCouleur,
+      8s linear infinite Tourner;
+  }
+  
+  @keyframes RondCouleur {
+    from {
+      box-shadow: 0 0 #4c23e8, 0 0 #e0a531, 0 0 #da0909, 0 0 #44ebe0;
+    }
+    to {
+      box-shadow: 0 -10px #4c23e8, -10px 0 #e0a531, 0 10px #da0909, 10px 0 #44ebe0;
+    }
+  }
+  
+  @keyframes Tourner {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  *****/
