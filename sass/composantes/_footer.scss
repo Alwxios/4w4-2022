@@ -6,6 +6,7 @@
 
     &__colonne { //.site__footer__colonne
         display :flex;
+        flex-direction: row;
         justify-content: space-between;
         section { //  .site__footer__colonne  section
           flex : 0 0 30%;
@@ -62,5 +63,17 @@
           }
         }    
      }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .site__footer__colonne {
+    display: flex;
+    flex-direction: column;
+
+    section {
+      margin-top: 1rem;
+    }
+    
   }
 }

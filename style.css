@@ -648,6 +648,7 @@ COMPOSANTES
 
 .site__footer__colonne {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -688,6 +689,16 @@ COMPOSANTES
 
 .footer__menu__nav__ul .menu-item a:hover svg {
   color: #12a85d;
+}
+
+@media only screen and (max-width: 600px) {
+  .site__footer__colonne {
+    display: flex;
+    flex-direction: column;
+  }
+  .site__footer__colonne section {
+    margin-top: 1rem;
+  }
 }
 
 .cours__contenu {
