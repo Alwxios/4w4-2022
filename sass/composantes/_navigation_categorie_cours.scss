@@ -7,19 +7,21 @@
         list-style-type: none;
 
         .menu-item { //li
+            border-radius: 45%;
+            padding: 1rem;
             margin: 0 15px;
-            background-color: $color__bouton__background;
+            background-color: $color__background-link;
             
             a {
-                color: $color__bouton__color;
+                color: $color__background-body;
                 padding: 5px;
             }
       
 
             &:hover {
-                color: $color__bouton__background--hover;
+                color: $color__background-link;
                 a {
-                    color: $color__bouton__color--hover;
+                    color: $color__link-hover;
                 }
             }
 
