@@ -24,7 +24,7 @@ $color__link__header-visited : rgb(219, 219, 219);
 /* ----------------------- couleur menu footer */
 $color__link__footer__menu : #fff;
 $color__link__footer__menu-visited : #ddd;
-$color__link__footer__menu-hover: #f00;
+$color__link__footer__menu-hover: #ddd;
 $background__link__footer__menu : #444;
 $background__link__footer__menu-visited : #555; 
 $background__link__footer__menu-hover: #222;
@@ -43,3 +43,12 @@ $color__font-header : rgb(44, 44, 44);
 $color__font-main :rgb(44, 44, 44);
 $color__font-barre : rgb(44, 44, 44);
 $color__font-footer : rgb(202, 202, 202);
+
+/* ----------------------- couleur menu principal */
+$color__bouton__color : rgb(27, 14, 148);
+$color__bouton__background : rgb(8, 104, 8); 
+$color__bouton__color--hover : rgb(178, 178, 209);
+$color__bouton__background--hover : rgb(47, 53, 47); 
+
+/* ---------------- TITRE */
+$color__titre__principal : rgb(255, 255, 255)

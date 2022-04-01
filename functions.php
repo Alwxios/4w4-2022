@@ -12,9 +12,22 @@ function cidw_4w4_register_nav_menu(){
     register_nav_menus( array(
         'menu_principal' => __( 'Menu principal', 'cidw_4w4' ),
         'menu_footer'  => __( 'Menu footer', 'cidw_4w4' ),
+        'menu_externe' => __('Menu externe', 'cidw_4w4 '),
+        'menu_categorie_cours' => __('Menu catégorie cours', 'cidw_4w4 '),
+        'menu_accueil' => __('Menu accueil', 'cidw_4w4 '),
     ) );
 }
 add_action( 'after_setup_theme', 'cidw_4w4_register_nav_menu', 0 );
+
+/* ------------------------------------------------------------ Afficher une description de choix de menu */
+
+function prefix_nav_description( $item_output, $item,  $args ) {
+    if ( !empty( $item->description ) ) {
+        $item_output = str_replace( $args->link_after . '</a>',
+        '<hr><span class="menu-item-description">' . $item->description . '</span>' .  '</a>',
+              $item_output );
+    }
+}
 
 /* ---------------------------------------------------------------------- filtré les choix du menu principal */
 function cidw_4w4_filtre_choix_menu($obj_menu){

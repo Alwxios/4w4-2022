@@ -1,8 +1,8 @@
 /*
-theme name: Test Alexis Leblanc
+theme name: Lab5 Alexis Leblanc
 Author: Alexis Leblanc
-Author URI: https://github.com/Alwxios
-Description: Le TP1 du cours de 4W4 dans le programme d'intégration en multimédia
+Author URI: https://github.com/Alwxios/4w4-2022/
+Description: Le lab 5 du cours de 4W4 dans le programme d'intégration en multimédia
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -26,6 +26,7 @@ INITIALISATION
 ÉLÉMENTS
 --------------------------------------------------------- */
 @import "elements/links";
+@import "elements/balise";
 
 /* ---------------------------------------------------------
 COMPOSANTES
@@ -33,9 +34,11 @@ COMPOSANTES
 @import "composantes/contenu";
 @import "composantes/header";
 @import "composantes/navigation";
+@import "composantes/navigation_categorie_cours";
 @import "composantes/footer";
 @import "composantes/single_cours";
 @import "composantes/recherche";
+@import  "composantes/navigation_accueil";
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */

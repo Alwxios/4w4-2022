@@ -1,0 +1,45 @@
+.menu-menu_accueil-container { // nav
+
+    .menu { // ul
+
+        display: flex;
+        justify-content: space-around;
+
+        .menu-item { // li
+            margin-top: 2rem;
+            width: 20%;
+            background-color: $color__background-main;
+            text-align: center;
+            border: 2px solid $color__background-body;
+            border-radius: 10%;
+
+            a {
+                color: $color__link__header-visited;
+;
+                font-size: 1.5rem;
+                .menu-item-description { //span
+
+                    font-size: 1rem;
+
+                }
+
+            }
+            &:hover {
+
+                background-color: $color__link-hover;
+
+                a{
+                    color: $color__link__footer-visited;
+                }
+            }
+        }
+
+
+
+    }
+
+
+
+
+
+}

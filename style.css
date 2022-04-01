@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*
-theme name: Test Alexis Leblanc
+theme name: Lab5 Alexis Leblanc
 Author: Alexis Leblanc
-Author URI: https://github.com/Alwxios
-Description: Le TP1 du cours de 4W4 dans le programme d'intégration en multimédia
+Author URI: https://github.com/Alwxios/4w4-2022/
+Description: Le lab 5 du cours de 4W4 dans le programme d'intégration en multimédia
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -22,6 +22,8 @@ VARIABLES
 /* ----------------------- couleur menu footer */
 /* ----------------------- couleur menu principal */
 /* ---------------- FONT */
+/* ----------------------- couleur menu principal */
+/* ---------------- TITRE */
 @import url("https://fonts.googleapis.com/css2?family=Karla&family=Righteous&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 /* ------------------------------------- points de rupture des media queries */
@@ -425,7 +427,7 @@ a:hover, a:active {
 }
 
 .site__footer .menu-item a:hover, .site__footer .menu-item a:focus, .site__footer .menu-item a:active {
-  color: #f00;
+  color: #ddd;
   background-color: #222;
 }
 
@@ -460,6 +462,35 @@ a:hover, a:active {
   outline: 0;
 }
 
+h1 {
+  font-size: clamp(2rem, 4vw, 5rem);
+  color: white;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+h4 {
+  font-size: 2.3rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
@@ -489,6 +520,8 @@ COMPOSANTES
 
 .formation__cours {
   background-color: #08472d;
+  background-repeat: no-repeat;
+  background-position: 93% 3%;
   box-shadow: #161817 1px -1px 10px;
   border-radius: 5px;
   margin: 10px;
@@ -538,6 +571,34 @@ COMPOSANTES
 
 .cours__description {
   font-size: 1rem;
+}
+
+.web {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=globe-bold");
+}
+
+.jeu {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=games");
+}
+
+.comm {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=users");
+}
+
+.design {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=color_lens");
+}
+
+.utilitaire {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools-bold");
+}
+
+.video {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=device-camera-video");
+}
+
+.creation-3d {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=view_in_ar");
 }
 
 .site__header {
@@ -640,6 +701,7 @@ COMPOSANTES
 
 .menu-item:hover {
   background-color: #2c2c2c;
+  opacity: 75%;
 }
 
 @media screen and (min-width: 800px) {
@@ -655,6 +717,29 @@ COMPOSANTES
   .home .menu-principal-container {
     display: none;
   }
+}
+
+.menu-categorie_cours-container .menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu-categorie_cours-container .menu .menu-item {
+  margin: 0 15px;
+  background-color: #086808;
+}
+
+.menu-categorie_cours-container .menu .menu-item a {
+  color: #1b0e94;
+  padding: 5px;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover {
+  color: #2f352f;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover a {
+  color: #b2b2d1;
 }
 
 .site__footer {
@@ -754,6 +839,37 @@ COMPOSANTES
   align-items: center;
   justify-content: center;
   border: none;
+}
+
+.menu-menu_accueil-container .menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-menu_accueil-container .menu .menu-item {
+  margin-top: 2rem;
+  width: 20%;
+  background-color: #08472d;
+  text-align: center;
+  border: 2px solid #dbdbdb;
+  border-radius: 10%;
+}
+
+.menu-menu_accueil-container .menu .menu-item a {
+  color: #dbdbdb;
+  font-size: 1.5rem;
+}
+
+.menu-menu_accueil-container .menu .menu-item a .menu-item-description {
+  font-size: 1rem;
+}
+
+.menu-menu_accueil-container .menu .menu-item:hover {
+  background-color: #12a85d;
+}
+
+.menu-menu_accueil-container .menu .menu-item:hover a {
+  color: black;
 }
 
 /* ---------------------------------------------------------
