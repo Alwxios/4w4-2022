@@ -809,6 +809,7 @@ COMPOSANTES
   height: 250px;
   padding: 10px;
   border-radius: 15px 50px 30px;
+  transition-duration: 0.4s;
 }
 
 .menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a {
