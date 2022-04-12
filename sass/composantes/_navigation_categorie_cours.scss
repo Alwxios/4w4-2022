@@ -6,21 +6,25 @@
 
         .menu-item{ // li
             margin : 0 15px;
-            background-color: $color__bouton__background;
+            transition-duration: 0.4s;
+            border: 5px solid $color__bouton__background;
+            border-radius: 5px 5px;
+            
                 a {
                     color : $color__bouton__color;
                     padding : 5px;
                 }
 
             &:hover {
-                background-color: $color__bouton__background--hover;
+                background-color: $color__bouton__background;
                 a { 
                     color : $color__bouton__color--hover;
                 }
             }
         }
         .current-menu-item {
-            background-color: $color__bouton__background--current;
+            border: 5px solid $color__bouton__background--hover;
+            background-color: $color__bouton__background--hover;
             a { 
                 color : $color__bouton__color--current;
             }

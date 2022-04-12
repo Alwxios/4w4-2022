@@ -25,6 +25,13 @@ VARIABLES
 /* ----------------------- couleur bouton menu-catégorie cours */
 /* --------------------------  couleur titre */
 /* -----------------------------------------  carte d'accueil */
+/*
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+$font__main : 'Karla', sans-serif;
+$font__titre : 'Righteous', cursive;
+*/
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -782,11 +789,11 @@ COMPOSANTES
 }
 
 .menu-accueil-container .menu .accueil__cours .menu-item-icone, .menu-evenement-container .menu .accueil__cours .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
 }
 
 .menu-accueil-container .menu .accueil__prof .menu-item-icone, .menu-evenement-container .menu .accueil__prof .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
+  background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=user-add");
 }
 
 .menu-accueil-container .menu .accueil__aide .menu-item-icone, .menu-evenement-container .menu .accueil__aide .menu-item-icone {
@@ -794,13 +801,14 @@ COMPOSANTES
 }
 
 .menu-accueil-container .menu .accueil__etudiant .menu-item-icone, .menu-evenement-container .menu .accueil__etudiant .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=user-group");
 }
 
 .menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
   width: 15%;
   height: 250px;
   padding: 10px;
+  border-radius: 15px 50px 30px;
 }
 
 .menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a {
@@ -834,7 +842,7 @@ COMPOSANTES
 }
 
 .menu-accueil-container .menu-item a {
-  color: #d4d4d4;
+  color: #292929;
 }
 
 .menu-accueil-container .menu-item:hover {
@@ -868,16 +876,18 @@ COMPOSANTES
 
 .menu-categorie_cours-container .menu .menu-item {
   margin: 0 15px;
-  background-color: #197446;
+  transition-duration: 0.4s;
+  border: 5px solid #197446;
+  border-radius: 5px 5px;
 }
 
 .menu-categorie_cours-container .menu .menu-item a {
-  color: #d4d4d4;
+  color: #292929;
   padding: 5px;
 }
 
 .menu-categorie_cours-container .menu .menu-item:hover {
-  background-color: #8b652b;
+  background-color: #197446;
 }
 
 .menu-categorie_cours-container .menu .menu-item:hover a {
@@ -885,7 +895,8 @@ COMPOSANTES
 }
 
 .menu-categorie_cours-container .menu .current-menu-item {
-  background-color: #145e39;
+  border: 5px solid #8b652b;
+  background-color: #8b652b;
 }
 
 .menu-categorie_cours-container .menu .current-menu-item a {
@@ -902,22 +913,13 @@ COMPOSANTES
 
 .site__footer__colonne {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .site__footer__colonne section {
-  flex: 0 0 100%;
+  flex: 0 0 30%;
   border: 1px solid #aaa;
-}
-
-@media screen and (min-width: 800px) {
-  .site__footer__colonne {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .site__footer__colonne section {
-    flex: 0 0 30%;
-  }
 }
 
 .site__footer__ligne {
@@ -932,15 +934,8 @@ COMPOSANTES
 
 .footer__menu__nav__ul {
   display: flex;
-  flex-direction: column;
   list-style-type: none;
   justify-content: center;
-}
-
-@media screen and (min-width: 800px) {
-  .footer__menu__nav__ul {
-    flex-direction: row;
-  }
 }
 
 .footer__menu__nav__ul .menu-item {
@@ -959,6 +954,16 @@ COMPOSANTES
 
 .footer__menu__nav__ul .menu-item a:hover svg {
   color: #12a85d;
+}
+
+@media only screen and (max-width: 600px) {
+  .site__footer__colonne {
+    display: flex;
+    flex-direction: column;
+  }
+  .site__footer__colonne section {
+    margin-bottom: 2rem;
+  }
 }
 
 .cours__contenu {

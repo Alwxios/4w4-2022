@@ -18,6 +18,8 @@ function cidw_4w4_register_nav_menu(){
         'menu_externe' => __( 'Menu externe', 'cidw_4w4' ),
         'menu_categorie_cours' => __( 'Menu catégorie_cours', 'cidw_4w4'),
         'menu_accueil' => __( 'Menu accueil', 'cidw_4w4'),
+        'menu_departement' => __( 'Menu Departement', 'cidw_4w4'),
+        'menu_evenement' => __( 'Menu Evenement', 'cidw_4w4'),
     ) );
 }
 add_action( 'after_setup_theme', 'cidw_4w4_register_nav_menu', 0 );
@@ -152,8 +154,8 @@ function cidw_4w4_pre_get_posts(WP_Query $query)
     else
     {
        
-        $ordre = get_query_var('ordre');
-        $cle = get_query_var('cletri');       
+        $ordre = get_query_var('ordre', 'asc');
+        $cle = get_query_var('cletri', 'title');       
         $query->set('order',  $ordre);
         $query->set('orderby', $cle);
         $query->set('postperpage','-1');

@@ -4,22 +4,23 @@
         display : flex;
         justify-content: space-around;
         .accueil__cours .menu-item-icone{
-            background-image: url('https://s2.svgbox.net/octicons.svg?ic=bug-bold');
+            background-image: url('https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold');
         }
         .accueil__prof .menu-item-icone{
-            background-image: url('https://s2.svgbox.net/octicons.svg?ic=bug-bold');
+            background-image: url('https://s2.svgbox.net/hero-outline.svg?ic=user-add');
         }
         .accueil__aide .menu-item-icone{
             background-image: url('https://s2.svgbox.net/octicons.svg?ic=bug-bold');
         }
         .accueil__etudiant .menu-item-icone{
-            background-image: url('https://s2.svgbox.net/octicons.svg?ic=bug-bold');
+            background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=user-group');
         }
 
         .menu-item { //li
             width : 15%;
             height : 250px;
             padding : 10px;
+            border-radius: 15px 50px 30px;
            
             a {
                 display : flex;

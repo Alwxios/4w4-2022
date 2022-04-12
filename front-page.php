@@ -8,7 +8,7 @@
 ?>
 <h2>Les événements importants pour l'année</h2>
 <?php 
-        wp_nav_menu(array("menu"=>"evenement",
+        wp_nav_menu(array("menu"=>"Evenement",
                             "container"=>"nav"));
 ?>
 
