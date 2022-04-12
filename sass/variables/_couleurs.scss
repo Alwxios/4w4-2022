@@ -1,10 +1,10 @@
 /* ---------------- BACKGROUND */
 $color__background-body : rgb(219, 219, 219);
 $color__background-body-clip : rgb(44, 44, 44); /**/
-$color__background-main : rgb(8, 71, 45);
-$color__background-cours : rgb(8, 71, 45);
-$color__background-header : rgb(8, 71, 45);
-$color__background-barre : rgb(233, 233, 233);
+$color__background-main : rgb(219, 219, 219);
+$color__background-cours : #0e4d41;
+$color__background-header : #0e4d41;
+$color__background-barre : rgb(39, 39, 39);
 $color__background-footer : #0e4d41;
 $color__background-link : rgb(44, 44, 44); /**/
 $color__background-link-hover : rgb(49, 49, 49);
@@ -12,14 +12,14 @@ $color__background-link-hover : rgb(49, 49, 49);
 /* ---------------- LIENS */
 $color__link : rgb(206, 169, 115);
 $color__link-hover : rgb(18, 168, 93);
-$color__link-visited : hsl(0, 0%, 0%);
+$color__link-visited : hsl(0, 0%, 59%);
 /* ---------------- LIENS FOOTER */
 $color__link__footer : rgb(206, 169, 115);
 $color__link__footer-hover : rgb(18, 168, 93);
 $color__link__footer-visited : hsl(0, 0%, 0%);
 /* ---------------- LIENS HEADER titre principal du site */
 $color__link__header : rgb(219, 219, 219);
-$color__link__header-hover : rgb(17, 83, 50);
+$color__link__header-hover : rgb(32, 156, 94);
 $color__link__header-visited : rgb(219, 219, 219);
 /* ----------------------- couleur menu footer */
 $color__link__footer__menu : #fff;
@@ -44,11 +44,22 @@ $color__font-main :rgb(44, 44, 44);
 $color__font-barre : rgb(44, 44, 44);
 $color__font-footer : rgb(202, 202, 202);
 
-/* ----------------------- couleur menu principal */
-$color__bouton__color : rgb(27, 14, 148);
-$color__bouton__background : rgb(8, 104, 8); 
-$color__bouton__color--hover : rgb(178, 178, 209);
-$color__bouton__background--hover : rgb(47, 53, 47); 
 
-/* ---------------- TITRE */
-$color__titre__principal : rgb(255, 255, 255)
+/* ----------------------- couleur bouton menu-catégorie cours */
+$color__bouton__color : rgb(212, 212, 212);
+$color__bouton__background : rgb(25, 116, 70); 
+$color__bouton__color--hover : rgb(255, 255, 255);
+$color__bouton__background--hover :  rgb(139, 101, 43); 
+$color__bouton__color--current: rgb(216, 216, 216);
+$color__bouton__background--current: rgb(20, 94, 57);
+
+/* --------------------------  couleur titre */
+$color__titre__principal : rgb(22, 22, 22);
+$color__titre__secondaire : rgb(38, 35, 78);
+$color__titre__ternaire : rgb(35, 33, 73);
+
+/* -----------------------------------------  carte d'accueil */
+$couleur__carte__evenement: rgb(218, 218, 218);
+$couleur__carte__evenement__background: rgb(25, 116, 70);
+$couleur__carte__evenement--hover: rgb(247, 247, 247);
+$couleur__carte__evenement__background--hover: rgb(15, 58, 37);

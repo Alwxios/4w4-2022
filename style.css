@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*
-theme name: Ex3 Alexis Leblanc
+theme name: Ex3 Alexis Leblanc - prof
 Author: Alexis Leblanc
 Author URI: https://github.com/Alwxios/4w4-2022/
-Description: L'exercice 3 du cours de 4W4 dans le programme d'intégration en multimédia
+Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -22,10 +22,9 @@ VARIABLES
 /* ----------------------- couleur menu footer */
 /* ----------------------- couleur menu principal */
 /* ---------------- FONT */
-/* ----------------------- couleur menu principal */
-/* ---------------- TITRE */
-@import url("https://fonts.googleapis.com/css2?family=Karla&family=Righteous&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+/* ----------------------- couleur bouton menu-catégorie cours */
+/* --------------------------  couleur titre */
+/* -----------------------------------------  carte d'accueil */
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -351,6 +350,73 @@ html {
   box-sizing: border-box;
 }
 
+/* --------------------------------------------------------
+LAYOUT
+--------------------------------------------------------- */
+/*
+theme name: Lab 2 Lemieux Florence
+*/
+.site {
+  background-color: rgba(219, 219, 219, 0.5);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  max-width: 100vw;
+}
+
+.home::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #2c2c2c;
+  z-index: -1;
+  clip-path: polygon(87% 0, 100% 0, 100% 100%, 58% 100%);
+}
+
+.site__header {
+  grid-area: header;
+  background-color: rgba(14, 77, 65, 0.5);
+}
+
+.site__barre {
+  grid-area: sidebar;
+  background-color: #272727;
+}
+
+.site__main {
+  grid-area: main;
+  background-color: rgba(219, 219, 219, 0.5);
+}
+
+.site__footer {
+  grid-area: footer;
+  background-color: #0e4d41;
+}
+
+/* configuration mobile */
+.site {
+  display: grid;
+  gap: 0px;
+  grid-template-columns: auto;
+  grid-template-areas: "sidebar" "header" "main" "footer";
+}
+
+@media screen and (min-width: 800px) {
+  .site {
+    grid-template-columns: 300px auto;
+    grid-template-areas: "header header" "sidebar main" "footer footer";
+  }
+  .home {
+    display: grid;
+    gap: 0px;
+    grid-template-columns: auto;
+    grid-template-areas: "sidebar" "header" "main" "footer";
+  }
+}
+
 /* ---------------------------------------------------------
 ÉLÉMENTS
 --------------------------------------------------------- */
@@ -361,7 +427,7 @@ a {
 }
 
 a:visited {
-  color: black;
+  color: #969696;
 }
 
 a:hover, a:focus, a:active {
@@ -405,7 +471,7 @@ a:hover, a:active {
 }
 
 .header__titre a:hover, .header__titre a:focus, .header__titre a:active {
-  color: #115332;
+  color: #209c5e;
 }
 
 .header__titre a:focus {
@@ -464,7 +530,6 @@ a:hover, a:active {
 
 h1 {
   font-size: clamp(2rem, 4vw, 5rem);
-  color: white;
 }
 
 h2 {
@@ -491,12 +556,30 @@ p {
   font-size: 1rem;
 }
 
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #161616;
+}
+
+h3, h4 {
+  font-family: "Poppins", sans-serif;
+  color: #26234e;
+}
+
+h5, h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
 .site__main {
   padding: 10px 15px;
-  background-color: #08472d;
+  background-color: #dbdbdb;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
@@ -507,10 +590,7 @@ COMPOSANTES
 }
 
 .formation__titre {
-  font-size: 2rem;
-  color: #2c2c2c;
   margin: 10px 0px;
-  font-family: "Righteous", cursive;
 }
 
 .formation__liste {
@@ -519,10 +599,10 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: #08472d;
   background-repeat: no-repeat;
-  background-position: 93% 3%;
-  box-shadow: #161817 1px -1px 10px;
+  background-position: 97% 3%;
+  background-color: #0e4d41;
+  box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
   margin: 10px;
   display: flex;
@@ -543,20 +623,6 @@ COMPOSANTES
   }
 }
 
-.formation__cours:hover {
-  background: #08472d;
-  box-shadow: 0 0 0 0 #08472d;
-  transition: 500ms ease-in-out;
-  animation: hover 5s infinite;
-}
-
-@keyframes hover {
-  0% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 #08472d;
-  }
-}
-
 .cours__titre {
   font-size: 1.5rem;
   color: #2c2c2c;
@@ -574,15 +640,11 @@ COMPOSANTES
 }
 
 .web {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=globe-bold");
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=globe");
 }
 
 .jeu {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=games");
-}
-
-.comm {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=users");
 }
 
 .design {
@@ -603,9 +665,9 @@ COMPOSANTES
 
 .site__header {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  background-color: #08472d;
+  align-items: center;
+  background-color: #0e4d41;
   color: #2c2c2c;
   padding-left: 10px;
 }
@@ -627,28 +689,28 @@ COMPOSANTES
 }
 
 .site__header .header__titre {
-  font-size: clamp(3rem, 3vw, 7rem);
-  font-family: "Righteous", cursive;
+  font-size: clamp(3rem, 4vw, 8rem);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 .site__header .header__description {
-  font-size: clamp(2rem, 2vw, 4rem);
-  font-family: "Karla", sans-serif;
+  font-size: clamp(2rem, 2vw, 3rem);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .util {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 90%;
   padding: 15px;
+  width: 90%;
+  justify-content: center;
 }
 
 @media screen and (min-width: 800px) {
   .util {
     margin-left: auto;
-    width: 300px;
+    width: 350px;
   }
 }
 
@@ -699,11 +761,6 @@ COMPOSANTES
   padding: 4px;
 }
 
-.menu-item:hover {
-  background-color: #2c2c2c;
-  opacity: 75%;
-}
-
 @media screen and (min-width: 800px) {
   .site #burger {
     display: none;
@@ -719,33 +776,125 @@ COMPOSANTES
   }
 }
 
+.menu-accueil-container .menu, .menu-evenement-container .menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-accueil-container .menu .accueil__cours .menu-item-icone, .menu-evenement-container .menu .accueil__cours .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
+}
+
+.menu-accueil-container .menu .accueil__prof .menu-item-icone, .menu-evenement-container .menu .accueil__prof .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
+}
+
+.menu-accueil-container .menu .accueil__aide .menu-item-icone, .menu-evenement-container .menu .accueil__aide .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
+}
+
+.menu-accueil-container .menu .accueil__etudiant .menu-item-icone, .menu-evenement-container .menu .accueil__etudiant .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
+}
+
+.menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
+  width: 15%;
+  height: 250px;
+  padding: 10px;
+}
+
+.menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  height: 100%;
+}
+
+.menu-accueil-container .menu .menu-item a hr, .menu-evenement-container .menu .menu-item a hr {
+  width: 90%;
+}
+
+.menu-accueil-container .menu .menu-item a .menu-item-description, .menu-evenement-container .menu .menu-item a .menu-item-description {
+  font-size: 1rem;
+}
+
+.menu-accueil-container .menu .menu-item a .menu-item-icone, .menu-evenement-container .menu .menu-item a .menu-item-icone {
+  width: 3rem;
+  height: 3rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: auto;
+  background-size: cover;
+}
+
+.menu-accueil-container .menu-item {
+  background-color: #197446;
+}
+
+.menu-accueil-container .menu-item a {
+  color: #d4d4d4;
+}
+
+.menu-accueil-container .menu-item:hover {
+  background-color: #8b652b;
+}
+
+.menu-accueil-container .menu-item:hover a {
+  color: white;
+}
+
+.menu-evenement-container .menu-item {
+  background-color: #197446;
+}
+
+.menu-evenement-container .menu-item a {
+  color: #dadada;
+}
+
+.menu-evenement-container .menu-item:hover {
+  background-color: #0f3a25;
+}
+
+.menu-evenement-container .menu-item:hover a {
+  color: #f7f7f7;
+}
+
 .menu-categorie_cours-container .menu {
   display: flex;
   list-style-type: none;
 }
 
 .menu-categorie_cours-container .menu .menu-item {
-  border-radius: 50px;
-  padding: 1rem;
   margin: 0 15px;
-  background-color: #2c2c2c;
+  background-color: #197446;
 }
 
 .menu-categorie_cours-container .menu .menu-item a {
-  color: #dbdbdb;
+  color: #d4d4d4;
   padding: 5px;
 }
 
 .menu-categorie_cours-container .menu .menu-item:hover {
-  color: #2c2c2c;
+  background-color: #8b652b;
 }
 
 .menu-categorie_cours-container .menu .menu-item:hover a {
-  color: #12a85d;
+  color: white;
 }
 
+.menu-categorie_cours-container .menu .current-menu-item {
+  background-color: #145e39;
+}
+
+.menu-categorie_cours-container .menu .current-menu-item a {
+  color: #d8d8d8;
+}
+
+/* ---------------------------------------------------- FOOTER */
 .site__footer {
-  font-family: "Righteous", cursive;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   background-color: #0e4d41;
   color: #cacaca;
   padding: 15px;
@@ -753,13 +902,22 @@ COMPOSANTES
 
 .site__footer__colonne {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .site__footer__colonne section {
-  flex: 0 0 30%;
+  flex: 0 0 100%;
   border: 1px solid #aaa;
+}
+
+@media screen and (min-width: 800px) {
+  .site__footer__colonne {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .site__footer__colonne section {
+    flex: 0 0 30%;
+  }
 }
 
 .site__footer__ligne {
@@ -774,8 +932,15 @@ COMPOSANTES
 
 .footer__menu__nav__ul {
   display: flex;
+  flex-direction: column;
   list-style-type: none;
   justify-content: center;
+}
+
+@media screen and (min-width: 800px) {
+  .footer__menu__nav__ul {
+    flex-direction: row;
+  }
 }
 
 .footer__menu__nav__ul .menu-item {
@@ -796,20 +961,11 @@ COMPOSANTES
   color: #12a85d;
 }
 
-@media only screen and (max-width: 600px) {
-  .site__footer__colonne {
-    display: flex;
-    flex-direction: column;
-  }
-  .site__footer__colonne section {
-    margin-bottom: 2rem;
-  }
-}
-
 .cours__contenu {
   display: flex;
 }
 
+/* ---------------------------------------------------- RECHERCHE */
 .recherche {
   position: relative;
   display: flex;
@@ -843,136 +999,49 @@ COMPOSANTES
   border: none;
 }
 
-.menu-menu_accueil-container .menu {
-  display: flex;
-  justify-content: space-around;
+.cidw_recherche .wp-block-search__input {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-.menu-menu_accueil-container .menu .menu-item {
-  margin-top: 2rem;
-  width: 20%;
-  background-color: #08472d;
-  text-align: center;
-  border: 2px solid #dbdbdb;
-  border-radius: 15px 50px 30px;
+.cidw_recherche .wp-block-search__input:focus {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-.menu-menu_accueil-container .menu .menu-item a {
-  color: #dbdbdb;
-  font-size: 1.5rem;
-}
-
-.menu-menu_accueil-container .menu .menu-item a .menu-item-description {
-  font-size: 1rem;
-}
-
-.menu-menu_accueil-container .menu .menu-item:hover {
-  background-color: #12a85d;
-}
-
-.menu-menu_accueil-container .menu .menu-item:hover a {
-  color: black;
+.cidw_recherche .wp-block-search__button {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=search&color=999");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 0;
+  width: 30px;
 }
 
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
-.titre {
-  text-align: center;
-}
-
 .animation {
   display: flex;
-  justify-content: center;
-  transition: transform 0.4s cubic-bezier(0.17, 0.67, 0.8, 0.16);
+  justify-content: space-between;
 }
 
 .animation__bloc {
-  width: 10rem;
-  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  padding-top: 11rem;
-  animation: 1.5s linear infinite alternate RondCouleur, 8s linear infinite Tourner;
+  background-color: #1161f7;
+  color: #fff;
+  font-size: 3rem;
+  animation: anim-entete 1s forwards;
 }
 
-@keyframes RondCouleur {
-  from {
-    box-shadow: 0 0 #08472d, 0 0 #cea973, 0 0 #12a85d, 0 0 #dbdbdb;
+@keyframes anim-entete {
+  0% {
+    transform: translateY(-100vh);
   }
-  to {
-    box-shadow: 0 -10px #08472d, -10px 0 #cea973, 0 10px #12a85d, 10px 0 #dbdbdb;
-  }
-}
-
-@keyframes Tourner {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* ---------------------------------------------------------
-LAYOUT
---------------------------------------------------------- */
-/*
-theme name: Lab 2 Lemieux Florence
-*/
-.site {
-  background-color: rgba(219, 219, 219, 0.5);
-  font-family: "Karla", sans-serif;
-}
-
-.home::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #2c2c2c;
-  z-index: -1;
-  clip-path: polygon(68% 0, 100% 0, 100% 100%);
-}
-
-.site__header {
-  grid-area: header;
-  background-color: rgba(8, 71, 45, 0.5);
-}
-
-.site__barre {
-  grid-area: sidebar;
-  background-color: #e9e9e9;
-}
-
-.site__main {
-  grid-area: main;
-  background-color: rgba(8, 71, 45, 0.5);
-}
-
-.site__footer {
-  grid-area: footer;
-  background-color: #0e4d41;
-}
-
-.site {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: auto;
-  grid-template-areas: "sidebar" "header" "main" "footer";
-}
-
-@media screen and (min-width: 800px) {
-  .site {
-    grid-template-columns: 300px auto;
-    grid-template-areas: "header header" "sidebar main" "footer footer";
-  }
-  .home {
-    grid-template-columns: 300px auto;
-    grid-template-areas: "header header" "sidebar main" "footer footer";
+  100% {
+    transform: translateY(0);
   }
 }
 /*# sourceMappingURL=style.css.map */

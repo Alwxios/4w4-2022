@@ -1,12 +1,17 @@
-<?php $categories = get_the_category();?>
-            
-<article class="formation__cours <?php echo $categories[1]->slug; ?>">
+<?php
+    // the_category();
+    $categories =  get_the_category();
+    //var_dump($categories);
+    
+?>
+<article class="formation__cours  <?php  echo $categories[1]->slug;  ?> ">
     <?php
-        $titre = get_the_title();
-        $titreFiltreCours = substr($titre, 7, -6);
-        $nbHeures = substr($titre, -6);
-        $sigleCours = substr($titre, 0, 7);
-        $descCours = get_the_excerpt();
+    $titre = get_the_title();
+    $titreFiltreCours = substr($titre, 7, -6);
+    // $nbHeures = substr($titre, -6);
+    $nbHeures = get_post_field( "nombre_dheures" );
+    $sigleCours = substr($titre, 0, 7);
+    $descCours = get_the_excerpt();
     ?>
 
     <?php the_post_thumbnail("thumbnail"); ?>

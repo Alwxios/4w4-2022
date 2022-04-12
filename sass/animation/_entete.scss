@@ -1,36 +1,26 @@
-.titre {
-  text-align: center;
+.animation{
+    display : flex;
+    justify-content: space-between;
+
+    &__bloc{
+        display : flex;
+        justify-content: center;
+        align-items: center;
+        width : 100px;
+        height : 100px;
+        border-radius: 50%;
+        background-color: rgb(17, 97, 247);
+        color : #fff;
+        font-size: 3rem;
+        animation : anim-entete 1s forwards;
+    }
 }
 
-.animation {
-    display: flex;
-    justify-content: center;
-    transition: transform 0.4s cubic-bezier(0.17, 0.67, 0.8, 0.16);
-
-  &__bloc {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    padding-top: 11rem;
-    animation: 1.5s linear infinite alternate RondCouleur,
-      8s linear infinite Tourner;
-  }
+@keyframes anim-entete {
+    0% {
+      transform : translateY(-100vh);  
+    }
+    100% {
+        transform : translateY(0);  
+    }
 }
-  
-  @keyframes RondCouleur {
-    from {
-      box-shadow: 0 0 rgb(8, 71, 45), 0 0 rgb(206, 169, 115), 0 0 rgb(18, 168, 93), 0 0 rgb(219, 219, 219);
-    }
-    to {
-      box-shadow: 0 -10px rgb(8, 71, 45), -10px 0 rgb(206, 169, 115), 0 10px rgb(18, 168, 93), 10px 0 rgb(219, 219, 219);
-    }
-  }
-  
-  @keyframes Tourner {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }

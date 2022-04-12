@@ -1,8 +1,8 @@
 /*
-theme name: Ex3 Alexis Leblanc
+theme name: Ex3 Alexis Leblanc - prof
 Author: Alexis Leblanc
 Author URI: https://github.com/Alwxios/4w4-2022/
-Description: L'exercice 3 du cours de 4W4 dans le programme d'intégration en multimédia
+Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -21,6 +21,10 @@ INITIALISATION
 --------------------------------------------------------- */
 @import "initialisation/normalize";
 @import "initialisation/box-sizing";
+/* --------------------------------------------------------
+LAYOUT
+--------------------------------------------------------- */
+@import "layout/layout";
 
 /* ---------------------------------------------------------
 ÉLÉMENTS
@@ -34,16 +38,15 @@ COMPOSANTES
 @import "composantes/contenu";
 @import "composantes/header";
 @import "composantes/navigation";
+@import "composantes/navigation_accueil";
 @import "composantes/navigation_categorie_cours";
+/* ---------------------------------------------------- FOOTER */
 @import "composantes/footer";
 @import "composantes/single_cours";
+/* ---------------------------------------------------- RECHERCHE */
 @import "composantes/recherche";
-@import  "composantes/navigation_accueil";
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
 @import "animation/entete";
-/* ---------------------------------------------------------
-LAYOUT
---------------------------------------------------------- */
-@import "layout/layout";
+
