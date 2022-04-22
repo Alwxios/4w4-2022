@@ -3,7 +3,7 @@
 theme name: Ex3 Alexis Leblanc
 Author: Alexis Leblanc
 Author URI: https://github.com/Alwxios/4w4-2022/
-Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
+Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse:
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -902,6 +902,22 @@ COMPOSANTES
 
 .menu-categorie_cours-container .menu .current-menu-item a {
   color: #d8d8d8;
+}
+
+.boite__modale {
+  position: fixed;
+  top: 25vh;
+  left: 25vw;
+  border: 5px solid #aaa;
+  background-color: blue;
+  width: 50vw;
+  height: 50vh;
+  transform: scale(0);
+  transition: all 1s ease-in-out;
+}
+
+.ouvrir {
+  transform: scale(1);
 }
 
 /* ---------------------------------------------------- FOOTER */

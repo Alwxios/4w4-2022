@@ -11,7 +11,8 @@
     // $nbHeures = substr($titre, -6);
     $nbHeures = get_post_field( "nombre_dheures" );
     $sigleCours = substr($titre, 0, 7);
-    $descCours = get_the_excerpt();
+    //$descCours = get_the_excerpt();
+    $descCours = wp_trim_words(get_the_content(),15, "<button class='cours__desc__ouvrir'> La suite </button>");
     ?>
 
     <?php the_post_thumbnail("thumbnail"); ?>
@@ -23,4 +24,5 @@
     <div class="cours__nbre-heure"><?= $nbHeures; ?></div>
     <p class="cours__sigle"><?= $sigleCours; ?> </p>
     <p class="cours__desc"> <?= $descCours; ?></p>
+    <p class="cours__department"><?php $departement; ?></p>
 </article>
