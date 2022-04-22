@@ -13,8 +13,10 @@
     $sigleCours = substr($titre, 0, 7);
     //$descCours = get_the_excerpt();
     $descCours = wp_trim_words(get_the_content(),15, "<button class='cours__desc__ouvrir'> La suite </button>");
+    $descriptionComplete = get_the_content();
     ?>
 
+    <code class="cours__desc__complet" style="display: none;"><?= $descriptionComplete; ?></code>
     <?php the_post_thumbnail("thumbnail"); ?>
     <h3 class="cours__titre">
         <a href="<?php echo get_permalink(); ?>">
