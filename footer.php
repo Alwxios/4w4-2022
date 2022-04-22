@@ -41,9 +41,9 @@
 </footer>
 <div class="boite__modale">
     <button class="boite__modale__fermeture">X</button>
-    <p class="boite__modale__texte">
+    <article class="boite__modale__texte">
         Ceci est un premier test de boite modale
-    </p>
+    </article>
 </div>
 
 </body>
