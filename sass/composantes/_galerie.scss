@@ -1,0 +1,10 @@
+/*
+Galerie Gunterberg de la page principal
+*/
+
+.galerie {
+    width: 100%;
+    @media screen and (min-width : $largeur__media--mobile){
+        width: 75%;
+    }
+}

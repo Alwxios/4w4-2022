@@ -11,6 +11,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <?php wp_head();?>
+    <!-- <style>
+        .site__footer {
+            background-color:  </*?php echo get_theme_mod('couleur_background_footer'); ?>;
+        }
+
+        .site__header {
+            background-color:  </*?php echo get_theme_mod('couleur_background_header'); ?>;
+        }
+       
+
+    </style> -->
     <?php show_admin_bar(true); ?>
 </head>
 <body  <?php body_class("site"); ?>  >

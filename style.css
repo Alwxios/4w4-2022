@@ -916,6 +916,23 @@ COMPOSANTES
   transform: scale(1);
 }
 
+/*
+Galerie Gunterberg de la page principal
+*/
+.galerie {
+  width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+  .galerie {
+    width: 75%;
+  }
+}
+
+.home .site__main {
+  align-items: center;
+}
+
 /* ---------------------------------------------------- FOOTER */
 .site__footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
