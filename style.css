@@ -1021,6 +1021,12 @@ COMPOSANTES
   background-color: #303030;
 }
 
+@media only screen and (max-width: 600px) {
+  .boite__modale__texte {
+    font-size: 13px;
+  }
+}
+
 /*
 Galerie Gunterberg de la page principal
 */
