@@ -9,8 +9,13 @@
         flex-direction: row;
         justify-content: space-between;
         section { //  .site__footer__colonne  section
-          flex : 0 0 30%;
-          border : 1px solid #aaa;
+          /*display: flex;*/
+          flex: 0 0 30%;
+          /*justify-content: center;
+          align-items: center;
+          border-radius: 5%;*/
+          border: 7px solid #aaa;
+          
         }
         .footer__adresse{ //.site__footer__colonne .footer__adresse 
          }

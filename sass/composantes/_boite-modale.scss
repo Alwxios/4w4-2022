@@ -1,7 +1,7 @@
 .boite__modale, .boite__carrousel {
     position: fixed;
-    border: 1px solid rgb(48, 48, 48);
-    background-color: rgb(6, 83, 23);
+    border: 8px solid rgb(48, 48, 48);
+    background-color: rgb(48, 48, 48);
     width: 50vw;
     height: 50vh;
     transform: scale(0);
@@ -18,6 +18,16 @@
         top: 10px;
         right: 10px;
         z-index: 1;
+        color: white;
+        background: none;
+        border: 2px solid white;
+        border-radius: 100%;
+        transition: 0.3s ease-in-out;
+    }
+
+    &__fermeture:hover {
+        border-radius: 0%;
+        border: 3px solid white;
     }
 
     &__texte {}
@@ -34,6 +44,9 @@
     height: 50%;
     top: 25%;
     left: 25%;
+    color: white;
+    text-align: center;
+    padding-top: 5rem;
 }
 
 .boite__carrousel {
@@ -57,15 +70,21 @@
         display: flex;
         justify-content: center;
         width: 100%;
-        border: 1px solid blue;
         z-index: 1;
 
         button {
             width: 20px;
             height: 20px;
             border-radius: 100%;
+            border: 3px solid white;
+            margin: 0 8px 5px 0;
+            background-color: transparent;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                background-color:white;
+            }
             &:focus {
-                background-color: black;
+                background-color:rgb(48, 48, 48);
             }
         }
     }

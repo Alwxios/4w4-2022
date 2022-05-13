@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: Lab10 Alexis Leblanc
+theme name: TP2 Alexis Leblanc
 Author: Alexis Leblanc
 Author URI: https://github.com/Alwxios/4w4-2022/
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub
@@ -902,8 +902,8 @@ COMPOSANTES
 
 .boite__modale, .boite__carrousel {
   position: fixed;
-  border: 1px solid #303030;
-  background-color: #065317;
+  border: 8px solid #303030;
+  background-color: #303030;
   width: 50vw;
   height: 50vh;
   transform: scale(0);
@@ -920,6 +920,16 @@ COMPOSANTES
   top: 10px;
   right: 10px;
   z-index: 1;
+  color: white;
+  background: none;
+  border: 2px solid white;
+  border-radius: 100%;
+  transition: 0.3s ease-in-out;
+}
+
+.boite__modale__fermeture:hover, .boite__carrousel__fermeture:hover {
+  border-radius: 0%;
+  border: 3px solid white;
 }
 
 .ouvrir {
@@ -931,6 +941,9 @@ COMPOSANTES
   height: 50%;
   top: 25%;
   left: 25%;
+  color: white;
+  text-align: center;
+  padding-top: 5rem;
 }
 
 .boite__carrousel {
@@ -955,7 +968,6 @@ COMPOSANTES
   display: flex;
   justify-content: center;
   width: 100%;
-  border: 1px solid blue;
   z-index: 1;
 }
 
@@ -963,10 +975,18 @@ COMPOSANTES
   width: 20px;
   height: 20px;
   border-radius: 100%;
+  border: 3px solid white;
+  margin: 0 8px 5px 0;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+}
+
+.boite__carrousel__navigation button:hover {
+  background-color: white;
 }
 
 .boite__carrousel__navigation button:focus {
-  background-color: black;
+  background-color: #303030;
 }
 
 /*
@@ -978,7 +998,7 @@ Galerie Gunterberg de la page principal
 
 @media screen and (min-width: 500px) {
   .galerie {
-    width: 75%;
+    width: 100%;
   }
 }
 
@@ -1001,8 +1021,12 @@ Galerie Gunterberg de la page principal
 }
 
 .site__footer__colonne section {
+  /*display: flex;*/
   flex: 0 0 30%;
-  border: 1px solid #aaa;
+  /*justify-content: center;
+          align-items: center;
+          border-radius: 5%;*/
+  border: 7px solid #aaa;
 }
 
 .site__footer__ligne {
@@ -1137,6 +1161,7 @@ ANIMATION
   margin: 10px;
   width: 2rem;
   height: 2rem;
+  margin-bottom: 1rem;
   border-radius: 25%;
   overflow: hidden;
   background-color: transparent;
