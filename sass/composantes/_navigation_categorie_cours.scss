@@ -32,3 +32,18 @@
 
     }
 }
+
+.cours__desc__ouvrir {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 4px solid white;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .cours__desc__ouvrir:hover {
+    color: #1ec5a6;
+    border: none;
+    /*background-color: #209e87;*/
+    border-bottom: 4px solid #1ec5a6;
+  }
