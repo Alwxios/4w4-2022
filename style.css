@@ -780,28 +780,28 @@ COMPOSANTES
   }
 }
 
-.menu-accueil-container .menu, .menu-evenement-container .menu {
+.menu-accueil-container .menu, .menu-evenement-container .menu, .menu-accueil-container .menu {
   display: flex;
   justify-content: space-around;
 }
 
-.menu-accueil-container .menu .accueil__cours .menu-item-icone, .menu-evenement-container .menu .accueil__cours .menu-item-icone {
+.menu-accueil-container .menu .accueil__cours .menu-item-icone, .menu-evenement-container .menu .accueil__cours .menu-item-icone, .menu-accueil-container .menu .accueil__cours .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
 }
 
-.menu-accueil-container .menu .accueil__prof .menu-item-icone, .menu-evenement-container .menu .accueil__prof .menu-item-icone {
+.menu-accueil-container .menu .accueil__prof .menu-item-icone, .menu-evenement-container .menu .accueil__prof .menu-item-icone, .menu-accueil-container .menu .accueil__prof .menu-item-icone {
   background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=user-add");
 }
 
-.menu-accueil-container .menu .accueil__aide .menu-item-icone, .menu-evenement-container .menu .accueil__aide .menu-item-icone {
+.menu-accueil-container .menu .accueil__aide .menu-item-icone, .menu-evenement-container .menu .accueil__aide .menu-item-icone, .menu-accueil-container .menu .accueil__aide .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
 }
 
-.menu-accueil-container .menu .accueil__etudiant .menu-item-icone, .menu-evenement-container .menu .accueil__etudiant .menu-item-icone {
+.menu-accueil-container .menu .accueil__etudiant .menu-item-icone, .menu-evenement-container .menu .accueil__etudiant .menu-item-icone, .menu-accueil-container .menu .accueil__etudiant .menu-item-icone {
   background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=user-group");
 }
 
-.menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
+.menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item, .menu-accueil-container .menu .menu-item {
   width: 15%;
   height: 250px;
   padding: 10px;
@@ -809,7 +809,7 @@ COMPOSANTES
   transition-duration: 0.4s;
 }
 
-.menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a {
+.menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a, .menu-accueil-container .menu .menu-item a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -818,15 +818,15 @@ COMPOSANTES
   height: 100%;
 }
 
-.menu-accueil-container .menu .menu-item a hr, .menu-evenement-container .menu .menu-item a hr {
+.menu-accueil-container .menu .menu-item a hr, .menu-evenement-container .menu .menu-item a hr, .menu-accueil-container .menu .menu-item a hr {
   width: 90%;
 }
 
-.menu-accueil-container .menu .menu-item a .menu-item-description, .menu-evenement-container .menu .menu-item a .menu-item-description {
+.menu-accueil-container .menu .menu-item a .menu-item-description, .menu-evenement-container .menu .menu-item a .menu-item-description, .menu-accueil-container .menu .menu-item a .menu-item-description {
   font-size: 1rem;
 }
 
-.menu-accueil-container .menu .menu-item a .menu-item-icone, .menu-evenement-container .menu .menu-item a .menu-item-icone {
+.menu-accueil-container .menu .menu-item a .menu-item-icone, .menu-evenement-container .menu .menu-item a .menu-item-icone, .menu-accueil-container .menu .menu-item a .menu-item-icone {
   width: 3rem;
   height: 3rem;
   background-position: center;
@@ -867,13 +867,29 @@ COMPOSANTES
   color: #f7f7f7;
 }
 
+.menu-atelier-container .menu-item {
+  background-color: #197446;
+}
+
+.menu-atelier-container .menu-item a {
+  color: #dadada;
+}
+
+.menu-atelier-container .menu-item:hover {
+  background-color: #0f3a25;
+}
+
+.menu-atelier-container .menu-item:hover a {
+  color: #f7f7f7;
+}
+
 @media only screen and (max-width: 600px) {
-  .menu-accueil-container .menu, .menu-evenement-container .menu {
+  .menu-accueil-container .menu, .menu-evenement-container .menu, .menu-atelier-container .menu {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
+  .menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item, .menu-atelier-container .menu .menu-item {
     width: 50%;
     margin-bottom: 1.5rem;
   }
