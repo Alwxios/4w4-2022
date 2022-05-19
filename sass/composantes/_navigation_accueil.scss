@@ -16,6 +16,22 @@
             background-image: url('https://s2.svgbox.net/hero-solid.svg?ic=user-group');
         }
 
+        .atelier__html .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/files.svg?ic=html");
+        }
+
+        .atelier__git .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/files.svg?ic=git");
+        }
+
+        .atelier__react .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/files.svg?ic=reactjs");
+        }
+
+        .atelier__css .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/files.svg?ic=css");
+        }
+
         .menu-item { //li
             width : 15%;
             height : 250px;

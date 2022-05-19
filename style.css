@@ -3,7 +3,7 @@
 theme name: Épreuve Finale Alexis Leblanc
 Author: Alexis Leblanc
 Author URI: https://github.com/Alwxios/4w4-2022/tree/epreuve-finale
-Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub
+Description: L'Épreuve Finale du cours de 4W4
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -799,6 +799,22 @@ COMPOSANTES
 
 .menu-accueil-container .menu .accueil__etudiant .menu-item-icone, .menu-evenement-container .menu .accueil__etudiant .menu-item-icone, .menu-accueil-container .menu .accueil__etudiant .menu-item-icone {
   background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=user-group");
+}
+
+.menu-accueil-container .menu .atelier__html .menu-item-icone, .menu-evenement-container .menu .atelier__html .menu-item-icone, .menu-accueil-container .menu .atelier__html .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=html");
+}
+
+.menu-accueil-container .menu .atelier__git .menu-item-icone, .menu-evenement-container .menu .atelier__git .menu-item-icone, .menu-accueil-container .menu .atelier__git .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=git");
+}
+
+.menu-accueil-container .menu .atelier__react .menu-item-icone, .menu-evenement-container .menu .atelier__react .menu-item-icone, .menu-accueil-container .menu .atelier__react .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=reactjs");
+}
+
+.menu-accueil-container .menu .atelier__css .menu-item-icone, .menu-evenement-container .menu .atelier__css .menu-item-icone, .menu-accueil-container .menu .atelier__css .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=css");
 }
 
 .menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item, .menu-accueil-container .menu .menu-item {
